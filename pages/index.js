@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import { myName } from "@/src/services/datya-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +18,7 @@ export default function Home() {
 
       <div className=" lg:hidden flex justify-center items-center h-screen ">
         <h1 className=" text-red-600 text-4xl md:text-5xl lg:text-8xl ">
-          hello world
+          hello {myName}
         </h1>
       </div>
     </>
