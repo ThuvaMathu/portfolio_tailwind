@@ -3,10 +3,12 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import { myName } from "@/src/services/datya-provider";
+import Navbar from "@/src/components/navbar/navbar";
+import Home from "@/src/components/page-elements/home";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function Main() {
   return (
     <>
       <Head>
@@ -15,11 +17,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <div className=" lg:hidden flex justify-center items-center h-screen ">
-        <h1 className=" text-red-600 text-4xl md:text-5xl lg:text-8xl ">
-          hello {myName}
-        </h1>
+      <div className=" relative ">
+        <Navbar />
+        <Home />
       </div>
     </>
   );
