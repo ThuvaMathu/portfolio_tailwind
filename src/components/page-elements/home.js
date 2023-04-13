@@ -3,15 +3,18 @@ import React from "react";
 export default function Home() {
   return (
     <>
-      <div className=" flex flex-col justify-center items-center w-full ">
-        {[
-          1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 20, 21,
-          222, 23, 445, 456, 456, 567, 678, 67, 989, 45, 3453, 4,
-        ].map((data, index) => (
-          <div key={index}>
-            <p className=" text-4xl ">hello world</p>
-          </div>
-        ))}
+      <div className=" flex flex-col space-y-8 justify-center items-center w-full ">
+        <div className=" w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gri ">
+          <div className=" w-full h-60 bg-rose-400 order-last "></div>
+          <div className=" w-full h-60 bg-green-400 "></div>
+          <div className=" w-full h-60 bg-yellow-400 order-first  "></div>
+        </div>
+
+        <div className=" w-full flex flex-wrap ">
+          <div className=" lg:w-1/3 md:w-1/2 w-full h-60 bg-rose-400 order-last"></div>
+          <div className=" lg:w-1/3 md:w-1/2 w-full h-60 bg-green-400  "></div>
+          <div className=" lg:w-1/3 md:w-1/2 w-full h-60 bg-yellow-400"></div>
+        </div>
       </div>
     </>
   );
