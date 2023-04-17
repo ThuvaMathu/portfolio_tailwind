@@ -5,6 +5,7 @@ import styles from "@/styles/Home.module.css";
 import { myName } from "@/src/services/datya-provider";
 import Navbar from "@/src/components/navbar/navbar";
 import Home from "@/src/components/page-elements/home";
+import About from "@/src/components/page-elements/about";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function Main() {
       <div className=" relative ">
         <Navbar />
         <Home />
+        <About/>
       </div>
     </>
   );

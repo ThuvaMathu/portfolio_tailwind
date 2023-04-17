@@ -24,10 +24,10 @@ export default function Home() {
               </button></div> */}
 
         {/* profile picture */}
-        <div className="flex w-full flex-wrap justify-center items-center object-center space-x-10 sm:max-md:space-y-5 ">
+        <div className="flex w-full flex-wrap justify-center items-center  space-x-10 sm:max-md:space-y-5 ">
           <div className=" lg:w-1/4 md:w-1/3 sm:w-1/2 xs: w-1/2  
           sm:max-md:ml-8
-          w-full h-[400px] bg-pink-200 object-center lg:mt-[100px] sm:mt-[150px] 
+          w-full h-[400px] bg-pink-200  lg:mt-[100px] sm:mt-[150px] 
           shadow-[-90px_-60px_0px_-15px_rgba(194,24,91,0.05)] animate-float"
           >
           </div>

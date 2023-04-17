@@ -10,6 +10,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+    
       animation: {
         'float': 'float 3s  infinite',
     },
