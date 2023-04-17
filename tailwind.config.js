@@ -10,25 +10,27 @@ module.exports = {
   ],
   theme: {
     extend: {
-    
+      screens: {
+        xs: "320px",
+        sm: "400px",
+        md: "640px",
+        lg: "960px",
+        xl: "1280px",
+      },
       animation: {
-        'float': 'float 3s  infinite',
-    },
-    keyframes:{
-      float: {
-        '0,100%': {
-          transform: 'translateY(0%)',
+        float: "float 3s  infinite",
+      },
+      keyframes: {
+        float: {
+          "0,100%": {
+            transform: "translateY(0%)",
+          },
+          "50%": {
+            transform: "translateY(2%)",
+          },
         },
-        '50%':{
-          transform: 'translateY(2%)',
-
-        }
-
-      }
+      },
     },
-  
-  }
-   
   },
-plugins: [],
+  plugins: [],
 };
